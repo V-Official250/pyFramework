@@ -15,3 +15,5 @@ while screen.isOpen:
 ```
 it creates a white 800x600 window with title `prototype`.
 ![image](https://user-images.githubusercontent.com/85917376/126364646-2d4c3444-20f9-4c07-ba1e-f59836440475.png)
+
+**tell me if i wrongh at something.....**
