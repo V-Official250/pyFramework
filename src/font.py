@@ -10,7 +10,7 @@ class Font:
         self.font = pygame.font.Font(path,size)
 
     #this function return the a texture with drawn font
-    def getText(self,text:str="Text",color:tuple=(0,0,0)) -> pygame.Surfaces:
+    def getText(self,text:str="Text",color:tuple=(0,0,0)) -> pygame.Surface:
         return self.font.render(text,True,color)
 
     #this function uninitlize the font module
