@@ -28,6 +28,10 @@ class Window:
     def clear(self,red:int,green:int,blue:int) -> None:
         self.__surface.fill((red,green,blue))
 
+    #render a entity on to the window
+    def render(self,entity) -> None:
+        self.__surface.blit(entity.texture,(entity.rect.x,entity.rect.y))
+
     #working with the close button in window
     def pollevent(self) -> None:
         for event in pygame.event.get():
