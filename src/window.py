@@ -1,4 +1,4 @@
-import pygame,sys
+import pygame
 
 #Author : V_#0343 (discord)
 #data   : july 20 2021
@@ -6,10 +6,7 @@ import pygame,sys
 
 class Window:
     def __init__(self, width:int, height:int, title:str):
-        """
-        working with window.
-        using pygame.
-        """
+        """working with window.using pygame."""
 
         #window's values
         self.width:int = width
@@ -30,7 +27,10 @@ class Window:
 
     #render a entity on to the window
     def render(self,entity) -> None:
-        self.__surface.blit(entity.texture,(entity.rect.x,entity.rect.y))
+        self.__surface.blit(entity.texture,(entity.x,entity.y))
+
+    def render_surface(self,surf,x,y) -> None:
+        self.__surface.blit(surf,(x,y))
 
     #working with the close button in window
     def pollevent(self) -> None:
