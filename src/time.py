@@ -25,6 +25,6 @@ class Time:
 
     #this function update the deltatime (call only once or it wont work)
     def update(self) -> None:
-        self.delta = time.time() - self._lasttime
+        self.delta = time.time() - self.__lasttime
         self.delta *= 60
         self.__lasttime = time.time()
