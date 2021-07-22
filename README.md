@@ -8,7 +8,7 @@ from window import Window
 
 win = Window(800,600,"prototype")
 
-while screen.isOpen:
+while win.isOpen:
     win.clear(255,255,255)
     win.pollevent()
     win.update()
@@ -29,7 +29,7 @@ img.x = 100
 img.y = 100
 img.texture = loader.load_img("./path/to/img")
 
-while screen.isOpen:
+while win.isOpen:
     win.clear(0,0,0)
     win.render(texture)
     win.pollevent()
