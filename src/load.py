@@ -17,6 +17,10 @@ class loader():
         surfacef = pygame.Surface((width,height))
         surfacef.blit(image,(x*-1,y*-1))
         return surfacef
+    
+    #this function loads image from image path
+    def load_img(path:str):
+        return pygame.image.load(path)
 
     #load json file and convert to enum
     def load_json(path:str):
