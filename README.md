@@ -18,7 +18,7 @@ it creates a white 800x600 window with title `prototype`.
 
 # Rendering image
 to render image you have to must clear window `win.clear(0,0,0)`
-```
+```python
 from window import Window
 from entity import entity
 from load import loader
