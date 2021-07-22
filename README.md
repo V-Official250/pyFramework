@@ -31,7 +31,7 @@ img.texture = loader.load_img("./path/to/img")
 
 while win.isOpen:
     win.clear(0,0,0)
-    win.render(texture)
+    win.render(img)
     win.pollevent()
     win.update()
 ```
