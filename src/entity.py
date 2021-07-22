@@ -17,3 +17,15 @@ class entity:
     #return entity height
     def get_height(self) -> float:
         return self.texture.get_height()
+
+    #scale up the texture width
+    def set_width(self,width:float) -> None:
+        pygame.transform.scale(self.texture,(width,self.texture.get_height()))
+        
+    #scale up the texture height
+    def set_height(self,height:float) -> None:
+        pygame.transform.scale(self.texture,(self.texture.get_width(),height))
+        
+    #scale up the texture
+    def set_size(self,width,height) -> None:
+        pygame.transform.scale(self.texture,(width,height))
