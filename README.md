@@ -3,7 +3,7 @@
 
 # simple window
 this files contains for functions and modules for creating window and rendering textures or shapes.
-```
+```python
 from window import Window
 
 win = Window(800,600,"prototype")
