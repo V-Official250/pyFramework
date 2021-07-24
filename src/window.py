@@ -18,7 +18,7 @@ class Window:
         self.__window:pygame.display = pygame.display.set_mode((width,height))
         self.__surface:pygame.Surface = pygame.Surface((width,height)).convert_alpha()
 
-        #setting window title
+        #setting window ti tle
         pygame.display.set_caption(title)
 
     #clearing window with a color (rgb)
@@ -29,6 +29,7 @@ class Window:
     def render(self,entity) -> None:
         self.__surface.blit(entity.texture,(entity.x,entity.y))
 
+    #render a surface or texture on to the window
     def render_surface(self,surf,x,y) -> None:
         self.__surface.blit(surf,(x,y))
 

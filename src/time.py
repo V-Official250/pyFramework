@@ -11,6 +11,10 @@ class Time:
         self.clock:pygame.time.Clock = pygame.time.Clock()
         self.__lasttime:float = time.time()
 
+    #return ticks
+    def get_time(self) -> float:
+        return time.time()
+
     #this function limits fps
     def maxfps(self,fps:int=60) -> None:
         self.clock.tick(fps)
